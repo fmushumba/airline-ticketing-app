@@ -1,0 +1,110 @@
+<body>
+    <div style=" padding: 20px;">
+        <form action="index.php" method="post">
+            <div class="row">
+                <div class="col_label">
+                    <label for="firstName">First Name:</label>
+                </div>
+                <div class="col_input">
+                    <input type="text" id="firstName" name="firstName" required><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_label">
+                    <label for="lastName">Last Name:</label>
+                </div>
+                <div class="col_input">
+                    <input type="text" id="lastName" name="lastName" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_label">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col_input">
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_label">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div class="col_input">
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_label">
+                    <label for="meetingDate">Request Meeting Date:</label>
+                </div>
+                <div class="col_input">
+                    <input type="date" id="meetingDate" name="meetingDate" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_label">
+                    <label for="meetingTime">Request Meeting Time:</label>
+                </div>
+                <div class="col_input">
+                    <input type="time" id="meetingTime" name="meetingTime" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_label">
+                    <label>Meeting Type:</label>
+                </div>
+                <div class="col_input">
+                    <input type="radio" id="online" name="meetingType" value="online" required>
+                    <label for="online">Online</label><br>
+                    <input type="radio" id="phoneType" name="meetingType" value="phone" required>
+                    <label for="phoneType">Phone</label><br>
+                    <input type="radio" id="onCampus" name="meetingType" value="onCampus" required>
+                    <label for="onCampus">On Campus</label><br><br>
+                </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 12px;">
+                <div class="col_label">
+                    <label for="topic">Topic:</label>
+                </div>
+                <div class="col_input">
+                    <fieldset>
+                        <legend style="font-size: medium;">Select one or more Topics: </legend>
+
+                        <div>
+                            <input type="checkbox" id="interview" name="interview" />
+                            <label for="interview">Schedule interview</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="tutoring" name="tutoring" />
+                            <label for="tutoring">Tutoring</label>
+                            <div>
+                                <input type="checkbox" id="questions" name="questions" />
+                                <label for="questions">Questions about experience</label>
+
+                    </fieldset>
+
+                </div>
+            </div>
+
+
+
+            <div class="row" style="display: flex;flex-wrap: nowrap;">
+                <div class="col_input">
+                    <input type="submit" value="Submit">
+
+                </div>
+                <div class="col_input" style="float: right;">
+
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
